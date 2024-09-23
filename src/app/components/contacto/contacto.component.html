@@ -1,0 +1,36 @@
+<section id="contacto" class="bg-general p-1">
+  <div class="container mt-5 mb-4">
+    <h2 class="text-center mb-4 retro-heading">Contacto</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-container">
+          <form (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input [(ngModel)]="name" name="name" type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" placeholder="Tu correo" required>
+              @if (email && email.length === 0) {
+                <div class="text-danger">El correo es requerido.</div>
+              }
+              @if (email && !isEmailValid()) {
+                <div class="text-danger">Introduce un correo válido.</div>
+              }
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea [(ngModel)]="message" name="message" class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" [disabled]="!isFormValid()">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <p class="lead mb-3 text-center">¿Quieres escribirme directamente a mi correo?</p>
+        <a href="mailto:diegoarnanzlozano96@gmail.com" class="btn btn-secondary w-auto">Escríbeme</a>
+      </div>
+    </div>
+  </div>
+</section>

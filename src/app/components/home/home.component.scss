@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'soda';
+    src: url('../../../assets/fonts/Soda Shake.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'retro';
+    src: url('../../../assets/fonts/Retrology\ DEMO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../../../assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+.home {
+    position: relative;
+    background-image: url('../../../assets/images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Filtro oscuro en el fondo */
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.home h1 {
+    font-family: 'soda';
+    color: #FBE9D0;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.home h1 span {
+    color: #FBE9D0;
+    text-shadow: 1px 1px 2px #252525;
+    // background-color: #1c414f89;
+    padding: 5px 10px;
+    border: 4px dashed #E64833;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+
+.background-daw {
+    font-family: 'retro';
+    font-size: 2rem;
+    color: #FBE9D0;
+    margin-top: 1rem;
+    max-width: 600px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px #000;
+
+    /* Estilos de fondo retro */
+    background: linear-gradient(135deg, #244855, #90AEAD);
+    /* Degradado retro */
+    padding: 4px 15px;
+    border-radius: 8px;
+}
+
+/* Estilo base para los botones */
+.btn {
+    font-family: 'roboto';
+    font-size: .8rem;
+    background-color: #E64833;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.btn:hover {
+    background-color: #244855;
+    color: white;
+    border: 2px solid #E64833;
+}
+
+.btn-secondary {
+    background-color: #244855;
+    color: white;
+    border: 2px solid #244855;
+}
+
+.btn-secondary:hover {
+    background-color: #E64833;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Estilos animacion texto */
+/* Estilos animación tipo teclado */
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    /* Ocultar letras fuera de la vista */
+    white-space: nowrap;
+    /* Evitar que las letras se vayan a la siguiente línea */
+    animation: typing 4s steps(30) forwards;
+    /* Aumenta la duración y pasos para ralentizar */
+    border-right: 3px solid;
+    /* Cursor */
+    animation-delay: 0.5s;
+    /* Retardo inicial antes de que comience la escritura */
+    margin-right: 10px;
+    /* Espacio entre el texto y el cursor */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #e64833c0;
+    }
+}
+
+/* Aplica el parpadeo del cursor */
+.animated-text {
+    animation: typing 3s steps(30) forwards, blink-caret 0.75s step-end infinite;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.game-container {
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #f0f0f02d;
+}
+
+.character {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: transform 0.5s ease;
+}
+
+.jumper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.obstacle {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #e74c3c;
+    bottom: 0;
+    right: 10px; // Comienza fuera de la vista
+}
+
+.moveObstacle {
+    animation: moveObstacle 1.5s linear infinite;
+}
+
+
+@keyframes moveObstacle {
+    0% {
+        right: 0px; // Comienza fuera de la vista
+    }
+
+    100% {
+        right: 100%; // Se mueve fuera de la vista
+    }
+}
+
+// Añade la clase para el salto
+.jump {
+    transform: translateY(-50px); // Ajusta la altura del salto
+    transition: transform 0.5s ease; 
+}
+
+
+.start-text {
+    font-size: 24px;
+    color: #FBE9D0;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.saltosTotal {
+    color: #8fa6ae;
+    z-index: 1;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 4rem;
+    }
+
+    .background-daw {
+        font-size: 1.5rem;
+    }
+
+    .start-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .background-daw {
+        font-size: 1.25rem;
+    }
+
+    .start-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-container {
+        display: none;
+    }
+    .start-text {
+        display: none;
+    }
+    .saltosTotal {
+        display: none;
+    }
+}

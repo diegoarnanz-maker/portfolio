@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../../../assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'retro';
+    src: url('../../../assets/fonts/Retrology\ DEMO.ttf') format('truetype');
+}
+
+:host {
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.custom-background {
+    background-color: #FBE9D0;
+    padding: 20px;
+}
+
+p span {
+    color: #E64833;
+}
+
+.text-primari {
+    color: #874F41;
+    font-family: 'retro';
+    font-size: 2rem;
+}
+
+.text-secondari {
+    color: #244855;
+    font-family: 'roboto';
+    font-style: italic;
+}
+
+.img-border {
+    border: 5px solid #E64833; 
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    object-fit: contain;
+    transition: transform 0.3s; 
+}
+
+.tech-icon:hover {
+    transform: scale(1.8);
+}
+
+
+

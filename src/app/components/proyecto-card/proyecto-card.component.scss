@@ -1,0 +1,112 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  z-index: 1;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+.card-img-top {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.card:hover {
+  z-index: 10;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.2);
+  z-index: 11;
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+  background-color: #FBE9D0;
+}
+
+
+.custom-background {
+  background-color: #FBE9D0;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  color: #244855;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.technologies-used {
+  background-color: rgba(220, 220, 220, 0.2);
+  border-radius: 5px;
+}
+
+.tech-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-family: 'retro';
+}
+
+.btn-primary {
+  background-color: #E64833;
+  color: #FBE9D0;
+  border: 2px solid #874F41;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #874F41;
+  color: #E64833;
+  border: 2px solid #E64833;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #E64833;
+  border: 2px solid #E64833;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary:hover {
+  background-color: #E64833;
+  color: #FBE9D0;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+

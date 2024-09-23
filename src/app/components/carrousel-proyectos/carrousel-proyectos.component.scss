@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'retro';
+    src: url('../../../assets/fonts/Retrology\ DEMO.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../../../assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+.custom-bg-general {
+    background-color: #d59a8b;
+    padding: 20px;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.text-primari {
+    color: #FBE9D0;
+    text-shadow: 2px 2px 4px #E64833;
+    border: 4px dashed #252525; 
+    padding: 15px; 
+    border-radius: 20px; 
+    font-family: 'roboto';
+    background-color: #244855;
+    box-shadow: 6px 6px 0 #E64833; 
+    text-align: center; 
+    display: inline-block;
+}
+
+
+.text-secundari {
+    color: #252525;
+    font-family: 'retro';
+    padding: 20px;
+    
+    border: 5px solid #874F41;
+    border-radius: 15px;
+    background-color: #FBE9D0;
+    box-shadow: 4px 4px 0 #244855;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 2rem;
+}
+
+.text-sub{
+    font-family: 'roboto';
+    color: #244855;
+}
+
+.custom-bg-fullstack {
+    background-color: #90AEAD;
+    color: white;
+}
+
+.custom-bg-frontend {
+    background-color: #90AEAD;
+    color: white;
+}
+
+.custom-bg-htmlcss {
+    background-color: #90AEAD;
+    color: #000;
+}
+
+.custom-bg-backend {
+    background-color: #90AEAD;
+    color: white;
+}
+
+

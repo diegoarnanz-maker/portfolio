@@ -1,0 +1,38 @@
+<section (click)="handleClick($event)" class="home" id="home">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="display-4">Bienvenido, soy <span>Diego</span></h1>
+      <p class="lead">
+        <span class="animated-text background-daw">Desarrollador de Aplicaciones Web</span>
+      </p>
+  
+      <div class="mt-3">
+        <a (click)="downloadCV($event)" class="btn btn-primary me-2">
+          Descargar CV
+        </a>
+        
+        <canvas #explosionCanvas style="position: fixed; top: 0; left: 0; pointer-events: none;"></canvas>
+
+        <a href="mailto:diegoarnanzlozano96@gmail.com" class="btn btn-secondary" (click)="$event.stopPropagation()">
+          Contactar
+        </a>
+      </div>
+  
+      <div class="mt-4 game-container">
+        <div #character class="character">
+          <div class="jumper">
+            <img src="../../../assets/images/patito.png" alt="Pollito">
+          </div>
+
+        </div>
+        <div #obstacle class="obstacle" [ngClass]="{ 'moveObstacle': gameStarted }"></div> <!-- Agrega la clase de animación aquí -->
+      </div>
+      <p class="saltosTotal">Saltos realizados: {{ obstaclesJumped }}</p>
+  
+      <div *ngIf="!gameStarted" class="start-text fs-5">
+        Haz clic en cualquier sitio para empezar a jugar
+      </div>
+  
+      <!-- <p *ngIf="collisionMessage">{{ collisionMessage }}</p> -->
+    </div>
+  </section>
+  

@@ -1,0 +1,90 @@
+<section id="proyectos" class="custom-bg-general">
+  <div class="container">
+    <h2 class="text-center mb-4 text-primari p-3">Mis Proyectos</h2> <!-- Título centrado -->
+    <!-- Sección Fullstack -->
+    <div class="project-section mb-4">
+      <h4 class="text-center mb-4 text-secundari">-- FullStack --</h4>
+      <div class="custom-bg-fullstack p-4">
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex justify-content-center flex-wrap">
+            <div *ngFor="let proyecto of projectsFullstack; let i = index" class="p-2">
+              <app-proyecto-card 
+              [title]="proyecto.title" 
+              [description]="proyecto.description"
+              [tecnologyIcons]="proyecto.tecnologyIcons" 
+              [imageUrl]="proyecto.imageUrl"
+              [githubLink]="proyecto.githubLink" [websiteLink]="proyecto.websiteLink">
+              </app-proyecto-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Fin de Fullstack -->
+
+    <!-- Sección Frontend -->
+    <div class="project-section mb-4">
+      <h4 class="text-center mb-4 text-secundari">-- Frontend --</h4>
+      <!--Seccion Angular-->
+      <div class="custom-bg-frontend p-4">
+        <h5 class="text-start text-sub">Angular 17</h5>
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex justify-content-center flex-wrap">
+            <div *ngFor="let proyecto of projectsFrontend; let i = index" class="p-2">
+              <app-proyecto-card 
+              [title]="proyecto.title" 
+              [description]="proyecto.description"
+              [tecnologyIcons]="proyecto.tecnologyIcons" 
+              [imageUrl]="proyecto.imageUrl"
+              [githubLink]="proyecto.githubLink" 
+              [websiteLink]="proyecto.websiteLink">
+              </app-proyecto-card>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sección HTML y CSS -->
+      <div class="project-section mb-4">
+        <div class="custom-bg-htmlcss p-4">
+          <h5 class="text-start text-sub">HTML & CSS</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+              <div *ngFor="let proyecto of projectsHtmlCss; let i = index" class="p-2">
+                <app-proyecto-card 
+                [title]="proyecto.title" 
+                [tecnologyIcons]="proyecto.tecnologyIcons"
+                [imageUrl]="proyecto.imageUrl" 
+                [githubLink]="proyecto.githubLink"
+                [websiteLink]="proyecto.websiteLink">
+                </app-proyecto-card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Fin de HTML y CSS -->
+
+    </div> <!-- Fin de Frontend -->
+
+    <!-- Sección Backend -->
+    <div class="project-section mb-4">
+      <h4 class="text-center mb-4 text-secundari">-- Backend --</h4>
+      <div class="custom-bg-backend p-4">
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex justify-content-center flex-wrap">
+            <div *ngFor="let proyecto of projectsBackend; let i = index" class="p-2">
+              <app-proyecto-card 
+              [title]="proyecto.title" 
+              [description]="proyecto.description"
+              [imageUrl]="proyecto.imageUrl" 
+              [tecnologyIcons]="proyecto.tecnologyIcons" 
+              [githubLink]="proyecto.githubLink"
+              [websiteLink]="proyecto.websiteLink">
+              >
+              </app-proyecto-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Fin de Backend -->
+
+  </div>
+</section>
