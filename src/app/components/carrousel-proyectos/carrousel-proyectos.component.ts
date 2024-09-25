@@ -43,6 +43,14 @@ export class CarrouselProyectosComponent {
 
   projectsFrontend = [
     {
+      title: 'Netflix-clone App',
+      description: 'Aplicación con inicio de sesión en Google Account (solo para usuarios en prueba) donde se muestran películas y carruseles de series.',
+      imageUrl: 'assets/foto-projects/netflix.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/netflix-clone-ng/tree/gh-pages',
+      websiteLink: 'https://diegoarnanz-maker-netflis-no-signin.netlify.app/'
+    },
+    {
       title: 'Pokédex App',
       description: 'Explora un catálogo de Pokémon de la primera generación. Ideal para fans del universo Pokémon.',
       imageUrl: 'assets/foto-projects/pokedex.png',
