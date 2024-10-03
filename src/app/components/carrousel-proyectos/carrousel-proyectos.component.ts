@@ -24,39 +24,39 @@ export class CarrouselProyectosComponent {
 
   projectsFullstack = [
     {
-      title: 'User Management System',
-      description: 'Una aplicación que gestiona usuarios, roles y permisos, asegurando acceso controlado y administración eficiente en entornos colaborativos.',
-      imageUrl: 'assets/foto-projects/users.png',
-      tecnologyIcons: [this.angularIcon, this.tsIcon, this.bootstrapIcon, this.springBootIcon, this.mySqlIcon],
-      githubLink: 'https://github.com/diegoarnanz-maker/users-app',
-      websiteLink: 'http://angular-users-app.s3-website.eu-north-1.amazonaws.com'
-    },
-    {
       title: 'Pintorest',
       description: 'Una plataforma de fotografía donde puedes registrarte e iniciar sesión para explorar fotos de otros usuarios, subir las tuyas y editarlas.',
       imageUrl: 'assets/foto-projects/pintorest.png',
       tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon, this.springBootIcon, this.mySqlIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/pintorest-app',
-      websiteLink: 'https://github.com/diegoarnanz-maker/pintorest-app'
+      websiteLink: 'https://pintorest-diego-maker.netlify.app/'
+    },
+    {
+      title: 'Agenda de Contactos',
+      description: 'Este proyecto es una agenda que permite añadir, modificar y eliminar contactos a través de API REST para gestionar los datos.',
+      imageUrl: 'assets/foto-projects/agenda.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon, this.springBootIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/agenda-contactos-app',
+      websiteLink: 'https://agenda-contactos-diego-maker.netlify.app/'
+    },
+    {
+      title: 'Users Management System',
+      description: 'Una aplicación con loggin que gestiona usuarios, roles y permisos, asegurando acceso controlado y administración eficiente en entornos colaborativos.',
+      imageUrl: 'assets/foto-projects/users.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.bootstrapIcon, this.springBootIcon, this.mySqlIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/users-app',
+      websiteLink: 'https://users-management-system-diego-maker.netlify.app/login'
     },
   ];
 
   projectsFrontend = [
     {
-      title: 'Netflix-clone App',
+      title: 'Netflix-clone',
       description: 'Aplicación con inicio de sesión en Google Account (solo para usuarios en prueba) donde se muestran películas y carruseles de series.',
       imageUrl: 'assets/foto-projects/netflix.png',
       tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/netflix-clone-ng/tree/gh-pages',
       websiteLink: 'https://diegoarnanz-maker-netflis-no-signin.netlify.app/'
-    },
-    {
-      title: 'Pokédex App',
-      description: 'Explora un catálogo de Pokémon de la primera generación. Ideal para fans del universo Pokémon.',
-      imageUrl: 'assets/foto-projects/pokedex.png',
-      tecnologyIcons: [this.angularIcon, this.tsIcon, this.sassIcon],
-      githubLink: 'https://github.com/diegoarnanz-maker/pokedex-app',
-      websiteLink: 'https://diegoarnanz-maker-pokedex.netlify.app'
     },
     {
       title: 'Invoice-app',
@@ -67,20 +67,28 @@ export class CarrouselProyectosComponent {
       websiteLink: 'https://factura-diegoarnanz-maker.netlify.app'
     },
     {
-      title: 'Calculadora inversiones',
-      description: 'Una herramienta para calcular el rendimiento de tus inversiones, estimando ganancias con un algoritmo.',
-      imageUrl: 'assets/foto-projects/calculadora.png',
-      tecnologyIcons: [this.angularIcon, this.tsIcon, this.cssIcon],
-      githubLink: 'https://github.com/diegoarnanz-maker/calculadora-inversiones',
-      websiteLink: 'https://diegoarnanz-maker-calcu-inversion.netlify.app/'
-    },
-    {
       title: 'Cart-app',
       description: 'Aplicación para gestionar un carrito de compras, permitiendo agregar, eliminar y revisar productos.',
       imageUrl: 'assets/foto-projects/cart.png',
       tecnologyIcons: [this.angularIcon, this.tsIcon, this.bootstrapIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/cart-app',
       websiteLink: 'https://diegoarnanz-maker-cart-app.netlify.app'
+    },
+    {
+      title: 'Pokédex App',
+      description: 'Explora un catálogo de Pokémon de la primera generación. Ideal para fans del universo Pokémon.',
+      imageUrl: 'assets/foto-projects/pokedex.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.sassIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/pokedex-app',
+      websiteLink: 'https://diegoarnanz-maker-pokedex.netlify.app'
+    },
+    {
+      title: 'Calculadora inversiones',
+      description: 'Una herramienta para calcular el rendimiento de tus inversiones, estimando ganancias con un algoritmo.',
+      imageUrl: 'assets/foto-projects/calculadora.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.cssIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/calculadora-inversiones',
+      websiteLink: 'https://diegoarnanz-maker-calcu-inversion.netlify.app/'
     },
     {
       title: 'Easy-task',

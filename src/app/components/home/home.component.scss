@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'retro';
-    src: url('../../../assets/fonts/Retrology\ DEMO.ttf') format('truetype');
+    src: url('../../../assets/fonts/Retrology DEMO.ttf') format('truetype');
 }
 
 @font-face {
@@ -25,7 +25,6 @@
     text-align: center;
 }
 
-/* Filtro oscuro en el fondo */
 .home::before {
     content: '';
     position: absolute;
@@ -50,7 +49,6 @@
 .home h1 span {
     color: #FBE9D0;
     text-shadow: 1px 1px 2px #252525;
-    // background-color: #1c414f89;
     padding: 5px 10px;
     border: 4px dashed #E64833;
     border-radius: 10px;
@@ -58,7 +56,6 @@
     position: relative;
     z-index: 2;
 }
-
 
 .background-daw {
     font-family: 'retro';
@@ -70,15 +67,11 @@
     position: relative;
     z-index: 2;
     text-shadow: 1px 1px 2px #000;
-
-    /* Estilos de fondo retro */
     background: linear-gradient(135deg, #244855, #90AEAD);
-    /* Degradado retro */
     padding: 4px 15px;
     border-radius: 8px;
 }
 
-/* Estilo base para los botones */
 .btn {
     font-family: 'roboto';
     font-size: .8rem;
@@ -109,47 +102,51 @@
     border: 2px solid white;
 }
 
-/* Estilos animacion texto */
-/* Estilos animación tipo teclado */
+.btn-icon {
+
+    margin-left: 20px;
+    margin-right: 10px;
+    border: none;
+}
+
+.icon-img {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-icon:hover {
+    background-color: transparent;
+}
+
 .animated-text {
     display: inline-block;
     overflow: hidden;
-    /* Ocultar letras fuera de la vista */
     white-space: nowrap;
-    /* Evitar que las letras se vayan a la siguiente línea */
     animation: typing 4s steps(30) forwards;
-    /* Aumenta la duración y pasos para ralentizar */
     border-right: 3px solid;
-    /* Cursor */
     animation-delay: 0.5s;
-    /* Retardo inicial antes de que comience la escritura */
     margin-right: 10px;
-    /* Espacio entre el texto y el cursor */
 }
 
 @keyframes typing {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
 }
 
 @keyframes blink-caret {
-
     from,
     to {
         border-color: transparent;
     }
-
     50% {
         border-color: #e64833c0;
     }
 }
 
-/* Aplica el parpadeo del cursor */
 .animated-text {
     animation: typing 3s steps(30) forwards, blink-caret 0.75s step-end infinite;
 }
@@ -202,30 +199,26 @@ canvas {
     height: 40px;
     background-color: #e74c3c;
     bottom: 0;
-    right: 10px; // Comienza fuera de la vista
+    right: 10px;
 }
 
 .moveObstacle {
     animation: moveObstacle 1.5s linear infinite;
 }
 
-
 @keyframes moveObstacle {
     0% {
-        right: 0px; // Comienza fuera de la vista
+        right: 0px;
     }
-
     100% {
-        right: 100%; // Se mueve fuera de la vista
+        right: 100%;
     }
 }
 
-// Añade la clase para el salto
 .jump {
-    transform: translateY(-50px); // Ajusta la altura del salto
+    transform: translateY(-50px);
     transition: transform 0.5s ease; 
 }
-
 
 .start-text {
     font-size: 24px;
@@ -239,7 +232,6 @@ canvas {
     z-index: 1;
 }
 
-/* Responsive*/
 @media (max-width: 768px) {
     .home h1 {
         font-size: 4rem;
