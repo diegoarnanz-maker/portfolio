@@ -51,6 +51,14 @@ export class CarrouselProyectosComponent {
 
   projectsFrontend = [
     {
+      title: 'ENSIGNA-ecommerce',
+      description: 'App Angular que permite a los usuarios explorar ropa mediante una API externa. Incluye formularios, sliders, cards. Ofreciendo una experiencia efectiva .',
+      imageUrl: 'assets/foto-projects/ensigna.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/ensigna/tree/gh-pages',
+      websiteLink: 'https://ensigna-diego-maker.netlify.app/'
+    },
+    {
       title: 'Netflix-clone',
       description: 'Aplicación con inicio de sesión en Google Account (solo para usuarios en prueba) donde se muestran películas y carruseles de series.',
       imageUrl: 'assets/foto-projects/netflix.png',
