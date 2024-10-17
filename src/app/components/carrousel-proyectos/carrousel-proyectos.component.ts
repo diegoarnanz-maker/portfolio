@@ -142,13 +142,21 @@ export class CarrouselProyectosComponent {
 
   projectsBackend = [
     {
+      title: 'Gestión de Excursiones',
+      description: 'Un Programa realziado con Spring Boot, JPA y Thymeleaf que permite administrar excursiones, guías y participantes. El backend gestiona las operaciones CRUD y la interfaz con Thymeleaf facilita la visualización y gestión de excursiones de forma sencilla.',
+      imageUrl: 'assets/foto-projects/excursiones.png',
+      tecnologyIcons: [this.springBootIcon, this.mySqlIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/Gestion-excursiones-spring-th-JPA',
+      websiteLink: 'https://github.com/diegoarnanz-maker/Gestion-excursiones-spring-th-JPA'
+    },
+    {
       title: 'CRUD',
-      description: 'Aplicación para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre datos, facilitando la gestión de información en tiempo real.',
+      description: 'App CRUD que permite gestionar  datos a través de las operaciones de Crear, Leer, Actualizar y Eliminar. Facilita el manejo de información en tiempo real, permitiendo a los usuarios agregar nuevos registros, visualizar datos existentes, actualizarlos cuando sea necesario y eliminarlos.',
       imageUrl: 'assets/foto-projects/spring.png',
       tecnologyIcons: [this.springBootIcon, this.mySqlIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/crud',
       websiteLink: 'https://github.com/diegoarnanz-maker/crud/'
-    },
+    }
   ];
 
     
