@@ -14,6 +14,7 @@ export class CarrouselProyectosComponent {
   // Definición de las variables para los íconos
   htmlIcon = 'assets/images/html.png';
   cssIcon = 'assets/images/css.png';
+  jsIcon = 'assets/images/js.png';
   sassIcon = 'assets/images/sass.png';
   bootstrapIcon = 'assets/images/bootstrap.png';
   springBootIcon = 'assets/images/springboot.png';
@@ -21,6 +22,7 @@ export class CarrouselProyectosComponent {
   tsIcon = 'assets/images/typescript.png';
   mySqlIcon = 'assets/images/mysql.png';
   tailwindIcon = 'assets/images/tailwind.png';
+  thymeleafIcon = 'assets/images/thymeleaf.png';
 
   projectsFullstack = [
     {
@@ -51,8 +53,16 @@ export class CarrouselProyectosComponent {
 
   projectsFrontend = [
     {
+      title: 'AGOODSHOP-cart',
+      description: 'Carrito de compras conectado a una API JSONBlob, con funciones para explorar, agregar y eliminar productos de forma sencilla.',
+      imageUrl: 'assets/foto-projects/agoodshop.png',
+      tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/Agoodghop-ng',
+      websiteLink: 'https://agoodshop-ng.netlify.app//'
+    },
+    {
       title: 'ENSIGNA-ecommerce',
-      description: 'App Angular que permite a los usuarios explorar ropa mediante una API externa. Incluye formularios, sliders, cards. Ofreciendo una experiencia efectiva .',
+      description: 'App Angular que permite a los usuarios explorar ropa mediante una API externa. Incluye formularios, sliders, cards. Ofreciendo una experiencia efectiva.',
       imageUrl: 'assets/foto-projects/ensigna.png',
       tecnologyIcons: [this.angularIcon, this.tsIcon, this.tailwindIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/ensigna/tree/gh-pages',
@@ -116,6 +126,17 @@ export class CarrouselProyectosComponent {
     },
   ];
 
+  projectsJs = [
+    {
+      title: 'Agoodshop-cart',
+      description: 'Carrito de compras conectado a una API JSONBlob, con funciones para explorar, agregar y eliminar productos de forma sencilla.',
+      imageUrl: 'assets/foto-projects/agoodshop-js.png',
+      tecnologyIcons: [this.htmlIcon, this.cssIcon, this.jsIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/Agoodshop-js/tree/gh-pages',
+      websiteLink: 'https://agoodshop-js.netlify.app/'
+    },
+  ];
+
   projectsHtmlCss = [
     {
       title: 'SmartWatch',
@@ -142,16 +163,24 @@ export class CarrouselProyectosComponent {
 
   projectsBackend = [
     {
+      title: 'Cajero virtual',
+      description: 'App de Spring Boot, JPA y Thymeleaf con vistas. Permite gestionar cuentas de usuarios, realizar operaciones de ingreso, retiro y transferencia de dinero, y ver el historial de movimientos. Implementa roles: admin (Puede dar de alta cuentas) y user (Solo operaciones).',
+      imageUrl: 'assets/foto-projects/cajero_roles.png',
+      tecnologyIcons: [this.springBootIcon, this.thymeleafIcon, this.mySqlIcon],
+      githubLink: 'https://github.com/diegoarnanz-maker/Cajero-virtual/tree/gh-pages',
+      websiteLink: 'https://github.com/diegoarnanz-maker/Cajero-virtual/tree/gh-pages'
+    },
+    {
       title: 'Gestión de Excursiones',
       description: 'Un Programa realziado con Spring Boot, JPA y Thymeleaf que permite administrar excursiones, guías y participantes. El backend gestiona las operaciones CRUD y la interfaz con Thymeleaf facilita la visualización y gestión de excursiones de forma sencilla.',
       imageUrl: 'assets/foto-projects/excursiones.png',
-      tecnologyIcons: [this.springBootIcon, this.mySqlIcon],
+      tecnologyIcons: [this.springBootIcon, this.thymeleafIcon, this.mySqlIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/Gestion-excursiones-spring-th-JPA',
       websiteLink: 'https://github.com/diegoarnanz-maker/Gestion-excursiones-spring-th-JPA'
     },
     {
       title: 'CRUD',
-      description: 'App CRUD que permite gestionar  datos a través de las operaciones de Crear, Leer, Actualizar y Eliminar. Facilita el manejo de información en tiempo real, permitiendo a los usuarios agregar nuevos registros, visualizar datos existentes, actualizarlos cuando sea necesario y eliminarlos.',
+      description: 'App CRUD que permite gestionar  datos a través de las operaciones de Crear, Leer, Actualizar y Eliminar. Facilita el manejo de información en tiempo real, permitiendo a los usuarios agregar nuevos registros, visualizar datos existentes, actualizarlos y eliminarlos.',
       imageUrl: 'assets/foto-projects/spring.png',
       tecnologyIcons: [this.springBootIcon, this.mySqlIcon],
       githubLink: 'https://github.com/diegoarnanz-maker/crud',
