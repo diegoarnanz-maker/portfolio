@@ -1,0 +1,267 @@
+{
+  "fullstack": [
+    {
+      "title": "Pintorest",
+      "description": "Una plataforma de fotografía donde puedes registrarte e iniciar sesión para explorar fotos de otros usuarios, subir las tuyas y editarlas.",
+      "imageUrl": "assets/foto-projects/pintorest.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png",
+        "assets/images/springboot.png",
+        "assets/images/mysql.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/pintorest-app",
+      "websiteLink": "https://pintorest-diego-maker.netlify.app/"
+    },
+    {
+      "title": "Agenda de Contactos",
+      "description": "Este proyecto es una agenda que permite añadir, modificar y eliminar contactos a través de API REST para gestionar los datos.",
+      "imageUrl": "assets/foto-projects/agenda.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png",
+        "assets/images/springboot.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/agenda-contactos-app",
+      "websiteLink": "https://agenda-contactos-diego-maker.netlify.app/"
+    },
+    {
+      "title": "Users Management System",
+      "description": "Una aplicación con loggin que gestiona usuarios, roles y permisos, asegurando acceso controlado y administración eficiente en entornos colaborativos.",
+      "imageUrl": "assets/foto-projects/users.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/bootstrap.png",
+        "assets/images/springboot.png",
+        "assets/images/mysql.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/users-app",
+      "websiteLink": "https://users-management-system-diego-maker.netlify.app/login"
+    }
+  ],
+  "frontend": [
+    {
+      "title": "AGOODSHOP-cart",
+      "description": "Carrito de compras conectado a una API JSONBlob, con funciones para explorar, agregar y eliminar productos de forma sencilla.",
+      "imageUrl": "assets/foto-projects/agoodshop.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/Agoodghop-ng",
+      "websiteLink": "https://agoodshop-ng.netlify.app/"
+    },
+    {
+      "title": "ENSIGNA-ecommerce",
+      "description": "App Angular que permite a los usuarios explorar ropa mediante una API externa. Incluye formularios, sliders, cards. Ofreciendo una experiencia efectiva.",
+      "imageUrl": "assets/foto-projects/ensigna.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/ensigna/tree/gh-pages",
+      "websiteLink": "https://ensigna-diego-maker.netlify.app/"
+    },
+    {
+      "title": "Netflix-clone",
+      "description": "Aplicación con inicio de sesión en Google Account (solo para usuarios en prueba) donde se muestran películas y carruseles de series.",
+      "imageUrl": "assets/foto-projects/netflix.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/netflix-clone-ng/tree/gh-pages",
+      "websiteLink": "https://diegoarnanz-maker-netflis-no-signin.netlify.app/"
+    },
+    {
+      "title": "Mi-Tienda",
+      "description": "Aplicación Angular con conexión clásica mediante Fetch a una API JSONBlob. Permite filtrar productos y añadir nuevos al array.",
+      "imageUrl": "assets/foto-projects/miTienda.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/bootstrap.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/Actividad02_carga_api",
+      "websiteLink": "https://github.com/diegoarnanz-maker/Actividad02_carga_api"
+    },
+    {
+      "title": "Invoice-app",
+      "description": "App que maneja una factura con datos, muestra detalles, donde se pueden añadir productos y calcular el total.",
+      "imageUrl": "assets/foto-projects/inovice.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/bootstrap.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/factura-app",
+      "websiteLink": "https://factura-diegoarnanz-maker.netlify.app"
+    },
+    {
+      "title": "Cart-app",
+      "description": "Aplicación para gestionar un carrito de compras, permitiendo agregar, eliminar y revisar productos.",
+      "imageUrl": "assets/foto-projects/cart.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/bootstrap.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/cart-app",
+      "websiteLink": "https://diegoarnanz-maker-cart-app.netlify.app"
+    },
+    {
+      "title": "Pokédex App",
+      "description": "Explora un catálogo de Pokémon de la primera generación. Ideal para fans del universo Pokémon.",
+      "imageUrl": "assets/foto-projects/pokedex.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/sass.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/pokedex-app",
+      "websiteLink": "https://diegoarnanz-maker-pokedex.netlify.app"
+    },
+    {
+      "title": "Calculadora inversiones",
+      "description": "Una herramienta para calcular el rendimiento de tus inversiones, estimando ganancias con un algoritmo.",
+      "imageUrl": "assets/foto-projects/calculadora.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/css.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/calculadora-inversiones",
+      "websiteLink": "https://diegoarnanz-maker-calcu-inversion.netlify.app/"
+    },
+    {
+      "title": "Easy-task",
+      "description": "Una aplicación de varios usuarios para gestionar tareas; permite añadir, editar y eliminar tareas.",
+      "imageUrl": "assets/foto-projects/easytask.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/css.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/easy-task",
+      "websiteLink": "https://diegoarnanz-maker-easytask.netlify.app"
+    },
+    {
+      "title": "To-do List",
+      "description": "App que permite añadir, editar o finalizar tareas pendientes, pudiendo revisar las activas y completadas.",
+      "imageUrl": "assets/foto-projects/todo.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/toDo-app",
+      "websiteLink": "https://diegoarnanz-maker-todo-app.netlify.app"
+    }
+  ],
+  "projectsBackend_mvc": [
+  {
+    "title": "Gestión de Eventos - Security",
+    "description": "App Spring Boot con autenticación mediante Spring Security. Incluye roles: administrador para gestión completa de eventos/usuarios/perfiles/tipo de eventos (creación, edición, eliminación), cliente para inscripción a eventos y perfil anónimo para consultas básicas.",
+    "imageUrl": "assets/foto-projects/gestionEventos.png",
+    "tecnologyIcons": [
+      "assets/images/springboot.png",
+      "assets/images/thymeleaf.png",
+      "assets/images/mysql.png"
+    ],
+    "githubLink": "https://github.com/diegoarnanz-maker/GestionEventos",
+    "websiteLink": "https://github.com/diegoarnanz-maker/GestionEventos"
+  },
+  {
+    "title": "Cajero virtual",
+    "description": "App de Spring Boot, JPA y Thymeleaf con vistas. Permite gestionar cuentas de usuarios, realizar operaciones de ingreso, retiro y transferencia de dinero, y ver el historial de movimientos. Implementa roles: admin (Puede dar de alta cuentas) y user (Solo operaciones).",
+    "imageUrl": "assets/foto-projects/cajero_roles.png",
+    "tecnologyIcons": [
+      "assets/images/springboot.png",
+      "assets/images/thymeleaf.png",
+      "assets/images/mysql.png"
+    ],
+    "githubLink": "https://github.com/diegoarnanz-maker/Cajero-virtual/tree/gh-pages",
+    "websiteLink": "https://github.com/diegoarnanz-maker/Cajero-virtual/tree/gh-pages"
+  },
+  {
+    "title": "Gestión de Excursiones",
+    "description": "Un Programa realizado con Spring Boot, JPA y Thymeleaf que permite administrar excursiones, guías y participantes. El backend gestiona las operaciones CRUD y la interfaz con Thymeleaf facilita la visualización y gestión de excursiones de forma sencilla.",
+    "imageUrl": "assets/foto-projects/excursiones.png",
+    "tecnologyIcons": [
+      "assets/images/springboot.png",
+      "assets/images/thymeleaf.png",
+      "assets/images/mysql.png"
+    ],
+    "githubLink": "https://github.com/diegoarnanz-maker/Gestion-excursiones-spring-th-JPA",
+    "websiteLink": "https://github.com/diegoarnanz-maker/Gestion-excursiones-spring-th-JPA"
+  }
+  ],
+  "projectsBackend_apirest": [
+    {
+      "title": "CRUD con TDD",
+      "description": "App API REST con TDD (Test-Driven Development) que gestiona datos mediante operaciones CRUD. Permitiendo agregar, visualizar, actualizar y eliminar registros, optimizando el manejo de información en tiempo real.",
+      "imageUrl": "assets/foto-projects/spring.png",
+      "tecnologyIcons": [
+        "assets/images/springboot.png",
+        "assets/images/mysql.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/TDD_CRUD_ApiRest",
+      "websiteLink": "https://github.com/diegoarnanz-maker/TDD_CRUD_ApiRest"
+    }
+  ],
+  "htmlCss": [
+  {
+    "title": "SmartWatch",
+    "description": "Explora y gestiona funciones de SmartWatches.",
+    "imageUrl": "assets/foto-projects/smartwatch.png",
+    "tecnologyIcons": [
+      "assets/images/html.png",
+      "assets/images/css.png"
+    ],
+    "githubLink": "https://github.com/diegoarnanz-maker/ProyectoSmartWatch",
+    "websiteLink": "https://diegoarnanz-maker.github.io/ProyectoSmartWatch/"
+  },
+  {
+    "title": "Tienda muebles",
+    "description": "Catálogo virtual de muebles.",
+    "imageUrl": "assets/foto-projects/tiendamuebles.png",
+    "tecnologyIcons": [
+      "assets/images/html.png",
+      "assets/images/css.png"
+    ],
+    "githubLink": "https://github.com/diegoarnanz-maker/TiendaMuebles?tab=readme-ov-file",
+    "websiteLink": "https://diegoarnanz-maker.github.io/TiendaMuebles/"
+  },
+  {
+    "title": "Ewallet-Paylnet",
+    "description": "Aplicación para gestionar billeteras electrónicas.",
+    "imageUrl": "assets/foto-projects/ewallet.png",
+    "tecnologyIcons": [
+      "assets/images/html.png",
+      "assets/images/css.png"
+    ],
+    "githubLink": "https://github.com/diegoarnanz-maker/ewallet-Paylnet",
+    "websiteLink": "https://diegoarnanz-maker.github.io/ewallet-Paylnet/"
+  }
+  ],
+  "projectsJs": [
+    {
+      "title": "Agoodshop-cart",
+      "description": "Carrito de compras conectado a una API JSONBlob, con funciones para explorar, agregar y eliminar productos de forma sencilla.",
+      "imageUrl": "assets/foto-projects/agoodshop-js.png",
+      "tecnologyIcons": [
+        "assets/images/html.png",
+        "assets/images/css.png",
+        "assets/images/js.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/Agoodshop-js/tree/gh-pages",
+      "websiteLink": "https://agoodshop-js.netlify.app/"
+    }
+  ]
+}

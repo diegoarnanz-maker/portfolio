@@ -32,22 +32,22 @@ export class HomeComponent implements AfterViewInit {
 
   // Métodos para iniciar el juego y manejar clics
   startGame() {
-    this.resetCollisionMessage(); // Reinicia el mensaje de colisión
+    this.resetCollisionMessage();
     if (!this.gameStarted) {
       this.gameStarted = true;
-      this.obstaclesJumped = 0; // Reinicia el contador al iniciar el juego
-      this.startObstacleMovement(); // Comienza a mover los obstáculos
+      this.obstaclesJumped = 0;
+      this.startObstacleMovement();
     }
   }
 
   handleClick(event: MouseEvent) {
-    this.startGame(); // Inicia el juego al hacer clic
-    this.jump(); // Salta al hacer clic
+    this.startGame();
+    this.jump();
   }
 
   // Métodos para el salto y el movimiento del obstáculo
   jump() {
-    if (this.jumping) return; // Evita saltar si ya está en salto
+    if (this.jumping) return;
     this.jumping = true;
     const character = this.character.nativeElement;
 
@@ -75,7 +75,7 @@ export class HomeComponent implements AfterViewInit {
     obstacle.style.right = `${currentPosition + 5}px`;
 
     if (currentPosition > window.innerWidth) {
-      obstacle.style.right = `-20px`; // Reinicia la posición del obstáculo
+      obstacle.style.right = `-20px`;
     }
   }
 
@@ -88,28 +88,27 @@ export class HomeComponent implements AfterViewInit {
       character.right >= obstacle.left &&
       character.left <= obstacle.right
     ) {
-      this.collisionMessage = '¡Colisión!'; // Actualiza el mensaje de colisión
+      this.collisionMessage = '¡Colisión!';
       clearInterval(this.obstacleInterval);
-      this.gameStarted = false; // Reinicia el juego si hay colisión
+      this.gameStarted = false;
     }
   }
 
   resetCollisionMessage() {
-    this.collisionMessage = null; // Reinicia el mensaje de colisión
+    this.collisionMessage = null;
   }
 
-  // Método para lanzar confeti
   downloadCV(event: MouseEvent) {
     event.stopPropagation();
     this.launchConfetti();
   
-    // Lógica para descargar el CV
     const link = document.createElement('a');
     link.href = 'assets/CV-diegomaker.pdf';
     link.download = 'Diego_Arnanz_Lozano-CV.pdf';
     link.click();
   }
 
+    // Método para lanzar confeti
   launchConfetti() {
     const duration = 1500; 
     const end = Date.now() + duration;

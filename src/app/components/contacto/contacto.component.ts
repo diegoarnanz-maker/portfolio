@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { EmailServiceService } from '../../services/email-service.service';
 
@@ -17,7 +17,7 @@ export class ContactoComponent {
   isSending: boolean = false;
   isSent: boolean = false;;
 
-  constructor(private emailService: EmailServiceService) {}
+  emailService = inject(EmailServiceService);
 
   onSubmit() {
     if (this.isFormValid()) {

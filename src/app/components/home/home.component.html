@@ -35,8 +35,10 @@
     </div>
     <p class="saltosTotal">Saltos realizados: {{ obstaclesJumped }}</p>
 
-    <div *ngIf="!gameStarted" class="start-text fs-5">
-      Haz clic en cualquier sitio para empezar a jugar
-    </div>
+    @if(!gameStarted) {
+      <div class="start-text fs-5">
+        Haz clic en cualquier sitio para empezar a jugar
+      </div>
+    }
   </div>
 </section>

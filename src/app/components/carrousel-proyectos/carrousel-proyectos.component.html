@@ -1,17 +1,15 @@
 <section id="proyectos" class="custom-bg-general">
   <div class="container">
     <h2 class="text-center mb-4 text-primari p-3">Mis Proyectos</h2>
-    <!-- Título centrado -->
+
     <!-- Sección Fullstack -->
     <div class="project-section mb-4">
       <h4 class="text-center mb-4 text-secundari">-- FullStack --</h4>
       <div class="custom-bg-fullstack p-4">
         <div class="row justify-content-center">
           <div class="col-12 d-flex justify-content-center flex-wrap">
-            <div
-              *ngFor="let proyecto of projectsFullstack; let i = index"
-              class="p-2"
-            >
+            @for (proyecto of projectsFullstack; track $index) {
+            <div class="p-2">
               <app-proyecto-card
                 [title]="proyecto.title"
                 [description]="proyecto.description"
@@ -22,24 +20,74 @@
               >
               </app-proyecto-card>
             </div>
+            }
           </div>
         </div>
       </div>
     </div>
-    <!-- Fin de Fullstack -->
+
+    <!-- Sección Backend -->
+    <div class="project-section mb-4">
+      <h4 class="text-center mb-4 text-secundari">-- Backend --</h4>
+
+      <!-- Sección Modelo Vista Controlador -->
+      <div class="custom-bg-frontend p-4">
+        <h5 class="text-start text-sub">Modelo Vista Controlador</h5>
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex justify-content-center flex-wrap">
+            @for (proyecto of projectsBackend_mvc; track $index) {
+            <div class="p-2">
+              <app-proyecto-card
+                [title]="proyecto.title"
+                [description]="proyecto.description"
+                [imageUrl]="proyecto.imageUrl"
+                [tecnologyIcons]="proyecto.tecnologyIcons"
+                [githubLink]="proyecto.githubLink"
+                [websiteLink]="proyecto.websiteLink"
+              >
+              </app-proyecto-card>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-auto y-4 separator-line"></div>
+
+      <!-- Sección API REST -->
+      <div class="custom-bg-frontend p-4">
+        <h5 class="text-start text-sub">API REST</h5>
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex justify-content-center flex-wrap">
+            @for (proyecto of projectsBackend_apirest; track $index) {
+            <div class="p-2">
+              <app-proyecto-card
+                [title]="proyecto.title"
+                [description]="proyecto.description"
+                [imageUrl]="proyecto.imageUrl"
+                [tecnologyIcons]="proyecto.tecnologyIcons"
+                [githubLink]="proyecto.githubLink"
+                [websiteLink]="proyecto.websiteLink"
+              >
+              </app-proyecto-card>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Sección Frontend -->
     <div class="project-section mb-4">
       <h4 class="text-center mb-4 text-secundari">-- Frontend --</h4>
+
       <!--Seccion Angular-->
       <div class="custom-bg-frontend p-4">
         <h5 class="text-start text-sub">Angular 17</h5>
         <div class="row justify-content-center">
           <div class="col-12 d-flex justify-content-center flex-wrap">
-            <div
-              *ngFor="let proyecto of projectsFrontend; let i = index"
-              class="p-2"
-            >
+            @for (proyecto of projectsFrontend; track $index) {
+            <div class="p-2">
               <app-proyecto-card
                 [title]="proyecto.title"
                 [description]="proyecto.description"
@@ -50,21 +98,21 @@
               >
               </app-proyecto-card>
             </div>
+            }
           </div>
         </div>
       </div>
 
-      <!-- Sección JS -->
+      <div class="mx-auto y-4 separator-line"></div>
 
+      <!-- Sección JS -->
       <div class="project-section">
         <div class="custom-bg-htmlcss p-4">
           <h5 class="text-start text-sub">JS</h5>
           <div class="row justify-content-center">
             <div class="col-12 d-flex justify-content-center flex-wrap">
-              <div
-                *ngFor="let proyecto of projectsJs; let i = index"
-                class="p-2"
-              >
+              @for (proyecto of projectsJs; track $index) {
+              <div class="p-2">
                 <app-proyecto-card
                   [title]="proyecto.title"
                   [tecnologyIcons]="proyecto.tecnologyIcons"
@@ -74,11 +122,13 @@
                 >
                 </app-proyecto-card>
               </div>
+              }
             </div>
           </div>
         </div>
       </div>
-      <!-- Fin de JS -->
+
+      <div class="mx-auto y-4 separator-line"></div>
 
       <!-- Sección HTML y CSS -->
       <div class="project-section mb-4">
@@ -86,10 +136,8 @@
           <h5 class="text-start text-sub">HTML & CSS</h5>
           <div class="row justify-content-center">
             <div class="col-12 d-flex justify-content-center flex-wrap">
-              <div
-                *ngFor="let proyecto of projectsHtmlCss; let i = index"
-                class="p-2"
-              >
+              @for (proyecto of projectsHtmlCss; track $index) {
+              <div class="p-2">
                 <app-proyecto-card
                   [title]="proyecto.title"
                   [tecnologyIcons]="proyecto.tecnologyIcons"
@@ -99,39 +147,11 @@
                 >
                 </app-proyecto-card>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin de HTML y CSS -->
-    </div>
-    <!-- Fin de Frontend -->
-
-    <!-- Sección Backend -->
-    <div class="project-section mb-4">
-      <h4 class="text-center mb-4 text-secundari">-- Backend --</h4>
-      <div class="custom-bg-backend p-4">
-        <div class="row justify-content-center">
-          <div class="col-12 d-flex justify-content-center flex-wrap">
-            <div
-              *ngFor="let proyecto of projectsBackend; let i = index"
-              class="p-2"
-            >
-              <app-proyecto-card
-                [title]="proyecto.title"
-                [description]="proyecto.description"
-                [imageUrl]="proyecto.imageUrl"
-                [tecnologyIcons]="proyecto.tecnologyIcons"
-                [githubLink]="proyecto.githubLink"
-                [websiteLink]="proyecto.websiteLink"
-              >
-                >
-              </app-proyecto-card>
+              }
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Fin de Backend -->
   </div>
 </section>

@@ -10,7 +10,6 @@ import { HomeComponent } from "./components/home/home.component";
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     NavbarComponent,
     SobreMiComponent,
     CarrouselProyectosComponent,

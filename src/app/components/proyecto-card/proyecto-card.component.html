@@ -1,15 +1,17 @@
-<div class="card" style="width: 20rem;">
+<div class="card" style="width: 20rem">
   <div class="card-img-wrapper">
-    <img [src]="imageUrl" class="card-img-top" alt="Project Image">
+    <img [src]="imageUrl" class="card-img-top" alt="Project Image" />
   </div>
-  <div class="card-body  custom-background">
-    <h5 class="card-title">{{title}}</h5>
-    <p class="card-text">{{description}}</p>
+  <div class="card-body custom-background">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ description }}</p>
 
     <div class="technologies-used my-3 d-flex flex-row p-2 rounded">
-      <ng-container *ngFor="let icon of tecnologyIcons">
+      @for(icon of tecnologyIcons; track $index) {
+      <ng-container>
         <img [src]="icon" alt="Technology Icon" class="tech-icon me-2" />
       </ng-container>
+      }
     </div>
 
     <div class="d-flex justify-content-between">
@@ -20,6 +22,5 @@
         Website
       </a>
     </div>
-</div>
-
+  </div>
 </div>
