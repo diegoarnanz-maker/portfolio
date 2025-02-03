@@ -203,13 +203,39 @@
   }
   ],
   "projectsBackend_apirest": [
+    
     {
-      "title": "CRUD con TDD",
-      "description": "App API REST con TDD (Test-Driven Development) que gestiona datos mediante operaciones CRUD. Permitiendo agregar, visualizar, actualizar y eliminar registros, optimizando el manejo de información en tiempo real.",
-      "imageUrl": "assets/foto-projects/spring.png",
+      "title": "Gestión de Comerciales con Spring Boot",
+      "description": "App API REST con Spring Boot y MySQL para gestionar comerciales, clientes y pedidos. Incluye pruebas con Mockito y JUnit para validar su fiabilidad. Permite realizar operaciones CRUD y obtener datos clave.",
+      "imageUrl": "assets/foto-projects/gestioncomerciales.png",
       "tecnologyIcons": [
         "assets/images/springboot.png",
         "assets/images/mysql.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/App_jefes_comerciales_JPA",
+      "websiteLink": "https://github.com/diegoarnanz-maker/App_jefes_comerciales_JPA"
+    },
+    {
+      "title": "API REST para Fisioterapia con Spring Boot y Seguridad JWT",
+      "description": "App API REST que gestiona agendas de fisioterapeutas mediante operaciones CRUD. Implementa seguridad con JWT y validaciones, además de test con Mockito, garantizando autenticación segura y fiabilidad en la gestión de citas.",
+      "imageUrl": "assets/foto-projects/fisioterapia.png",
+      "tecnologyIcons": [
+        "assets/images/springboot.png",
+        "assets/images/mysql.png",
+        "assets/images/jwt.png",
+        "assets/images/mockito.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/Fisioterapia_springboot",
+      "websiteLink": "https://github.com/diegoarnanz-maker/Fisioterapia_springboot"
+    },
+    {
+      "title": "CRUD con TDD",
+      "description": "App API REST con TDD (Test-Driven Development) que gestiona datos mediante operaciones CRUD. Permitiendo agregar, visualizar, actualizar y eliminar registros, optimizando el manejo de información en tiempo real.",
+      "imageUrl": "assets/foto-projects/apiresttdd.png",
+      "tecnologyIcons": [
+        "assets/images/springboot.png",
+        "assets/images/mysql.png",
+        "assets/images/mockito.png"
       ],
       "githubLink": "https://github.com/diegoarnanz-maker/TDD_CRUD_ApiRest",
       "websiteLink": "https://github.com/diegoarnanz-maker/TDD_CRUD_ApiRest"
