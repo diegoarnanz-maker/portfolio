@@ -1,14 +1,28 @@
 {
   "fullstack": [
     {
+      "title": "User Management-Security",
+      "description": "App web para la gestión de usuarios con autenticación Basic Auth. Permite el registro, login y administración de usuarios con control de roles.",
+      "imageUrl": "assets/foto-projects/usermanagment.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/springboot.png",
+        "assets/images/typescript.png",
+        "assets/images/bootstrap.png",
+        "assets/images/mysql.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/user-management-spring",
+      "websiteLink": "https://github.com/diegoarnanz-maker/user-management-angular"
+    },
+    {
       "title": "Pintorest",
       "description": "Una plataforma de fotografía donde puedes registrarte e iniciar sesión para explorar fotos de otros usuarios, subir las tuyas y editarlas.",
       "imageUrl": "assets/foto-projects/pintorest.png",
       "tecnologyIcons": [
         "assets/images/angular.png",
+        "assets/images/springboot.png",
         "assets/images/typescript.png",
         "assets/images/tailwind.png",
-        "assets/images/springboot.png",
         "assets/images/mysql.png"
       ],
       "githubLink": "https://github.com/diegoarnanz-maker/pintorest-app",
@@ -20,9 +34,9 @@
       "imageUrl": "assets/foto-projects/agenda.png",
       "tecnologyIcons": [
         "assets/images/angular.png",
+        "assets/images/springboot.png",
         "assets/images/typescript.png",
-        "assets/images/tailwind.png",
-        "assets/images/springboot.png"
+        "assets/images/tailwind.png"
       ],
       "githubLink": "https://github.com/diegoarnanz-maker/agenda-contactos-app",
       "websiteLink": "https://agenda-contactos-diego-maker.netlify.app/"
