@@ -1,6 +1,20 @@
 {
   "fullstack": [
     {
+      "title": "SeriesReviews-Security",
+      "description": "App con Basic Auth. Users califican, comentan, guardan favoritas y ven tráileres. Admins gestionan contenido y usuarios, con menú para visitantes.",
+      "imageUrl": "assets/foto-projects/series.png",
+      "tecnologyIcons": [
+        "assets/images/angular.png",
+        "assets/images/springboot.png",
+        "assets/images/typescript.png",
+        "assets/images/tailwind.png",
+        "assets/images/mysql.png"
+      ],
+      "githubLink": "https://github.com/diegoarnanz-maker/series_security_back",
+      "websiteLink": "https://github.com/diegoarnanz-maker/series_security_front"
+    },
+    {
       "title": "User Management-Security",
       "description": "App web para la gestión de usuarios con autenticación Basic Auth. Permite el registro, login y administración de usuarios con control de roles.",
       "imageUrl": "assets/foto-projects/usermanagment.png",
